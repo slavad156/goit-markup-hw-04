@@ -306,7 +306,7 @@ img {
 }
 
 .features-display .item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/sprites.svg#icon-antenna);
 }
 
 .features-display .item:nth-child(2)::before {
@@ -360,6 +360,7 @@ img {
 }
 
 .our-team {
+  min-width: 1600px;
   background-color: var(--secondary-background-color);
 }
 
@@ -411,10 +412,38 @@ img {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-color-text);
+
+  margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: #2196f3;
+}
+
+.link-client {
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.link-client:hover,
+.link-client:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* page portfolio */
