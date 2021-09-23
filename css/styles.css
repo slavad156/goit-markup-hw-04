@@ -202,6 +202,34 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-social {
+  padding-top: 12px;
+}
+
+.social-text {
+  display: block;
+  color: var(--white-color);
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-social .list {
+  display: flex;
+}
+
 /* hero */
 .hero {
   background-color: #2f303a;
@@ -373,6 +401,20 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+}
+
+/* clients */
+.clients-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-color-text);
+}
+
+.clients-list {
+  display: flex;
 }
 
 /* page portfolio */
