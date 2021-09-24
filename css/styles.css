@@ -421,25 +421,16 @@ img {
 }
 
 .clients-icon {
-  fill: #afb1b8;
-}
-
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: #2196f3;
-}
-
-.link-client {
   display: block;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
 }
 
-.link-client:hover,
-.link-client:focus {
-  border: 1px solid #2196f3;
+.clients-icon:focus,
+.clients-icon:hover {
+  fill: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .clients-list .item:not(:last-child) {
