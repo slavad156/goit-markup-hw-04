@@ -69,6 +69,7 @@ img {
 
 /* Header */
 .page-header {
+  min-width: 1600px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -126,11 +127,24 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.conn-icon {
+  fill: var(--primary-color-text);
+  margin-right: 10px;
 }
 
 .header-conn .link:hover,
 .header-conn .link:focus {
   color: var(--accent);
+}
+
+.header-conn .link:hover .conn-icon,
+.header-conn .link:focus .conn-icon {
+  fill: var(--accent);
 }
 
 .header-nav .item:not(:last-child) {
@@ -448,10 +462,6 @@ img {
 
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-icon {
-  fill: ;
 }
 
 /* page portfolio */
