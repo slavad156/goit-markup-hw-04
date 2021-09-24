@@ -420,21 +420,38 @@ img {
   display: flex;
 }
 
-.clients-icon {
-  display: block;
-  fill: #afb1b8;
+.clients-list .link-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  width: 170px;
+  height: 92px;
 }
 
-.clients-icon:focus,
-.clients-icon:hover {
-  fill: var(--accent);
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-list .link-client:focus,
+.clients-list .link-client:hover {
   border: 1px solid var(--accent);
+}
+
+.clients-list .link-client:focus .clients-icon,
+.clients-list .link-client:hover .clients-icon {
+  fill: var(--accent);
 }
 
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-icon {
+  fill: ;
 }
 
 /* page portfolio */
