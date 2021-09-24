@@ -244,6 +244,30 @@ img {
   display: flex;
 }
 
+.footer-icon {
+  fill: var(--white-color);
+}
+
+.link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  background-color: var(--accent);
+}
+
 /* hero */
 .hero {
   background-color: #2f303a;
@@ -308,31 +332,15 @@ img {
   margin-right: 30px;
 }
 
-.features-display .item::before {
-  content: '';
-  display: block;
+.features-icon {
+  display: flex;
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.features-display .item:nth-child(1)::before {
-  background-image: url(../images/sprites.svg#icon-antenna);
-}
-
-.features-display .item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-
-.features-display .item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.features-display .item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
@@ -403,6 +411,46 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-bottom: 16px;
+}
+
+/* .team-social .list {
+  display: flex;
+} */
+
+.team-icon {
+  fill: #afb1b8;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.link-team:hover,
+.link-team:focus {
+  background-color: var(--accent);
+}
+
+.link-team:hover .team-icon,
+.link-team:focus .team-icon {
+  fill: var(--white-color);
 }
 
 .card-person-content {
